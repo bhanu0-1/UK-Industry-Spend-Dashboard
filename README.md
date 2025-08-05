@@ -1,52 +1,87 @@
 # UK Industry Spend Dashboard 📊
 
-This project visualizes simulated monthly spend by UK industries across product groups using real data from the Office for National Statistics (ONS).
-
-It demonstrates data wrangling, transformation, and business intelligence dashboarding using Python and Power BI.
+A clean, portfolio-ready analytics project that transforms UK ONS industry–product spend data into **monthly insights** and visualises them in **Power BI**.  
+It demonstrates practical skills in **Python (pandas, NumPy)**, **data modelling**, and **BI storytelling** using a reproducible pipeline.
 
 ---
 
-## 📁 Project Structure
+## Overview
+
+This project simulates **monthly spend** by UK industries across product groups using constrained annual values from the **Office for National Statistics (ONS)**.
+
+**Key outcomes:**
+- Monthly trends by industry and product group
+- Ready-to-use CSV for BI tools
+- Reproducible Python script
+
+---
+
+## Data Source
+
+- **ONS Annual Purchases Survey 2023**  
+  Source: https://www.ons.gov.uk/
+
+> ⚠️ Note: The raw data provides **annual** values. Monthly splits are **synthetic and illustrative** for dashboarding purposes only.
+
+---
+
+## Features
+
+- Reshapes wide ONS tables into tidy format
+- Simulates monthly spending distribution per industry–product group
+- Exports clean CSV for dashboards
+- Dashboard includes KPIs, trends, and a matrix view
+
+---
+
+## Repository Structure
+UK-Industry-Spend-Dashboard/
+├── data/
+│ └── simulated_monthly_spend_data.csv
+├── scripts/
+│ └── generate_monthly_data.py
+├── visuals/
+│ └── dashboard_screenshot.png
+└── README.md
 
 
+---
+
+## How to Run the Script
+
+1. Download the original Excel file from ONS and place it in the project root:
+
+energygoodsandservices2023100425.xlsx
 
 
-## 🎯 Project Objectives
-
-- Transform ONS data into monthly insights
-- Simulate realistic industry-wise spending behavior
-- Visualize key business trends for BI portfolios
-- Showcase dashboarding + Python automation skills
-
-## 🛠 Tools & Technologies
-
-- Python (Pandas, NumPy)
-- Git & GitHub
-- Power BI (for visuals)
-- Data: [ONS Annual Purchases Survey 2023](https://www.ons.gov.uk/)
-
-## 📊 Dashboard Highlights (Power BI)
-
-- 📈 Line Chart: Monthly spend per industry
-- 🧮 Matrix: Product group × industry breakdown
-- 🏆 KPIs: Peak spend month, top sectors
-- 📊 Bar Charts: Top 5 spending industries/product groups
-
-## 📌 How to Run the Script
-
-1. Download the original ONS Excel file
-2. Place it in the project root as:
-   energygoodsandservices2023100425.xlsx
-3. Run the script:
+2. Run the Python script:
+python scripts/generate_monthly_data.py
 
 
+3. The output will be saved to:
+data/simulated_monthly_spend_data.csv
 
 
-The output will be saved to:
-   data/simulated_monthly_spend_data.csv
+---
 
-## 👨‍💻 Author
+## Power BI Dashboard Highlights
+
+- 📈 **Line Chart**: Monthly spend by industry
+- 📊 **Bar Chart**: Total spend by industry
+- 🧮 **Matrix**: Product group × industry
+- 🏆 **KPI Card**: Total spend overview
+
+*Screenshot:*
+
+![Dashboard](visuals/dashboard_screenshot.png)
+
+---
+
+## Author
 
 **Bhanu Prakash Jajapuram**  
 MSc in Business Analytics | Data Analyst | Python + Power BI Enthusiast  
 📧 bhanujajapuram1187@gmail.com
+
+
+
